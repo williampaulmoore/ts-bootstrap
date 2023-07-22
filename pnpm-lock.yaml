@@ -8,6 +8,9 @@ dependencies:
   commander:
     specifier: ^11.0.0
     version: 11.0.0
+  prettier:
+    specifier: ^3.0.0
+    version: 3.0.0
 
 devDependencies:
   '@types/jest':
@@ -2279,6 +2282,12 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /prettier@3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
 
   /pretty-format@29.6.1:
     resolution: {integrity: sha512-7jRj+yXO0W7e4/tSJKoR7HRIHLPPjtNaUGG2xxKQnGvPNRkgWcQ0AZX6P4KBRJN4FcTBWb3sa7DVUJmocYuoog==}
