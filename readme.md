@@ -14,3 +14,12 @@ This project is a typescript cli project that can be installed via npm link.  On
 ashm
 ```
 
+### Contributing
+
+The project is typescript tested via jest.  Each project bootstrapper will be setup in its own  directory under the ./src dir (which is the root for project source).  Test files are expected to be typescript, live in the same directory and have .test as a prefix to the file extension.
+
+e.g. ./scr/ts-cli/index.test.ts
+
+### QA
+
+There is a __qa.sh__ in the root directory that is mainly intended for ci pipeline, it performs a test run that will generate a testrun report and a coverage report. TAP format is uised for the test run report as it is a universal format rathen than tool or language specific.
