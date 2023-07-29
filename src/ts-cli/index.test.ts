@@ -1,6 +1,3 @@
-describe('tscli', () => {
-
-    it('confidence', () => {
-    });
-
+describe("tscli", () => {
+    it("confidence", () => {});
 });
