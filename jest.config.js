@@ -1,6 +1,17 @@
-export default {
-    preset: 'ts-jest',
+const config = {
+    preset: 'ts-jest/presets/default-esm',
     testEnvironment: 'node',
+    transform: {
+        '^.+\\.ts': [
+            'ts-jest',
+            {
+                useESM: true,
+            }
+        ],
+    },
+    testPathIgnorePatterns: [
+        "<rootDir>/dist/",
+    ],
     reporters : getReporters(),
     ...getCoverageConfig()
 };
@@ -33,3 +44,5 @@ function getCoverageConfig() {
     }
     return result;
 }
+
+export default config;

@@ -2,7 +2,7 @@
 
 qa_dir='./qa'
 
-if [ -d $qa_dir ]=; then
+if [ -d $qa_dir ]; then
     rm -rf $qa_dir 
 fi
 

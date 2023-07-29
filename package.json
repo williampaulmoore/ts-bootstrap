@@ -8,7 +8,7 @@
     "lint": "eslint ./src --ext .ts",
     "compile": "rm -rf ./dist && tsc",
     "build": "pnpm run format &&  pnpm run lint && pnpm run compile",
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "bin": {
     "tsbs": "./run.sh"
